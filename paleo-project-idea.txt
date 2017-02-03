@@ -1,0 +1,15 @@
+The groups that I have downloaded data for are the Alligatorideae family; the Ginkgo genus; and the Canis genus. They are listed in my order of preference.
+
+Species Counts:
+
+Alligatorideae
+less alligatoridae_pbdb_data.csv | tail -n +17 | cut -d ',' -f 6-7 | grep species | sort | uniq | wc -l
+---Results in 101 unique species---
+
+Ginkgo
+less ginkgo_pbdb_data.csv | tail -n +17 | cut -d ',' -f 6-7 | grep species | sort | uniq | wc -l
+---Results in 31 unique species---
+
+Canis
+less canis_pbdb_data.csv | tail -n +17 | cut -d ',' -f 6-7 | grep species | sort | uniq | wc -l
+---Results in 87 unique species---
