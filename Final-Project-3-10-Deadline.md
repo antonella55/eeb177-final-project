@@ -12,8 +12,11 @@ The *Alligatoridae* family is made up of species classified as alligators and ca
 
 ### Background on the DataSet
 My original data file from the pbdb website contained occurence data for specimens in the alligatoridae family and when using the the shell command: 
+
 		tail -n +19 alligatoridae_pbdb_data.csv | cut -d "," -f7 | sort | wc -l
+
  I can see that there are 444 specimens in the data. Specimens were identified to the family, genus or species rank within my dataset. Therefore, previous functions that I have written were to be able to sort through each occurence data and select only data which was identified to the species rank. For example, to create a species ranges dictionary I used the following python code:
+
 		species_ranges=defaultdict(list)
 		for line in alligator:
 			items = line.split('","')
