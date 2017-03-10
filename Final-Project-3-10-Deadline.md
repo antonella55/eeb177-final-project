@@ -11,7 +11,17 @@ The *Alligatoridae* family is made up of species classified as alligators and ca
 [Figure 2: Phylogeny of extant amniot tetrapod vertebrates](Figures/figure2.png)
 
 ### Background on the DataSet
-My original data file from the pbdb website contained occurence data for specimens in the alligatoridae family, thus the specimens could be identified to the family, genus or species rank. Therefore, previous functions that I have written were to be able to sort through each occurence data and select only data which was identified to the species rank. When using the the shell command tail -n +19 alligatoridae_pbdb_data.csv | cut -d "," -f7 | sort | wc -l, I can see that there are 444 specimens in the data. 
+My original data file from the pbdb website contained occurence data for specimens in the alligatoridae family and when using the the shell command: 
+		tail -n +19 alligatoridae_pbdb_data.csv | cut -d "," -f7 | sort | wc -l
+ I can see that there are 444 specimens in the data. Specimens were identified to the family, genus or species rank within my dataset. Therefore, previous functions that I have written were to be able to sort through each occurence data and select only data which was identified to the species rank. For example, to create a species ranges dictionary I used the following python code:
+		species_ranges=defaultdict(list)
+		for line in alligator:
+			items = line.split('","')
+			max_ma = items[14]
+			min_ma = items[15]
+			species_name = items[5]
+			if re.search(r"species", line):
+			species_ranges[species_name].append(min_ma + max_ma)
 
 
 [This is the alligatoridae range plot](/FinalProject-Rangeplot_files/figure-markdown_strict/unnamed-chunk-2-1.png)
