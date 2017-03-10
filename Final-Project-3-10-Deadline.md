@@ -43,7 +43,7 @@ Which looked like this:
 [alligatoridae_ranges.csv](/Figures/csvscreenshot.png)
 
 Rstudio was used to label the data table:
-[](/Figures/rstudiotable.png)
+[labeled data table](/Figures/rstudiotable.png)
 
 Finally, using ggplot I created this rangeplot for species occurences. (I need to reformat the "time(Ma ago)" axis because each max and min ma is showing for each data value.
 [This is the alligatoridae range plot](/FinalProject-Rangeplot_files/figure-markdown_strict/unnamed-chunk-2-1.png)
