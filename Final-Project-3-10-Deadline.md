@@ -26,8 +26,32 @@ My original data file from the pbdb website contained occurence data for specime
 			if re.search(r"species", line):
 			species_ranges[species_name].append(min_ma + max_ma)
 
+Using this dictionary, I wrote a csv file that contained only the genus, species, min_ma and max_ma for specimens identified to the species rank:
 
+		output=open("alligatoridae_ranges.csv", "w") #i am making the output file
+		for key, values in species_ranges.items():
+			values.sort()
+			#the largest value appears last in list and smallest appears first in list
+			max_age = values[-1]
+			min_age = values[0]
+			genus=key.split(" ")[0] 
+			outline= "{},{},{},{}\n".format(genus, key, min_age, max_age)
+			print(outline)
+			output.write(outline)
+
+Which looked like this:
+[alligatoridae_ranges.csv](/Figures/csvscreenshot.png)
+
+Rstudio was used to label the data table:
+[](/Figures/rstudiotable.png)
+
+Finally, using ggplot I created this rangeplot for species occurences. (I need to reformat the "time(Ma ago)" axis because each max and min ma is showing for each data value.
 [This is the alligatoridae range plot](/FinalProject-Rangeplot_files/figure-markdown_strict/unnamed-chunk-2-1.png)
+
+### Future directions
+It would be very interesting if the pbdb website provided data on the exact locations that each specimen was found in order to recreate species occurences map. When on the pbdb website however, I found a map which showed locations of the occurences already (it is linked below). We can see that some *Alligatoridae* specimens occurred in regions as far north as Canada. Clearly it is much to cold today in Canada at those high latitudes, therefore finding remains of members of this family either suggests that Canada once had a much warmer climate. This could be evidence supporting that tectonic plates and thus continents have shifted throughout earths history.
+
+[*Alligatoridae* Occurence Map](/Figures/worldoccurence.png)
 
 
     1. "Natural History Collections: Family Alligatoridae." Natural History Collections: Family Alligatoridae. <http://www.nhc.ed.ac.uk/index.php?page=24.134.137.141.149>.
