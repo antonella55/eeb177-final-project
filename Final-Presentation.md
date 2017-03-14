@@ -5,9 +5,9 @@
 ### Introduction
 The *Alligatoridae* family is made up of species classified as alligators and caimans. Alligatoridae belongs to the order Crocodilia which is a sister taxa to birds(aves) and turtles(Testudines) due to the presence of the amniotic sac(2)(See Figures 1 and 2). All members of the Alligatoridae are carnivorous. Today the *Alligatoridae* family is distributed in Central and South America as well as the Southeastern United States (1). Their distinguished features such as massive skull and short, broad snout have not change significantly since the late Triassic. Members of *Alligatoridea* do not tolerate salt water, therefore their main way of dispersal was via land bridges. There is evidence that within *Alligatoridea* the caiman subclass evolved from the alligator subclass after its dispersal southward from North America to South America.
 
-	![Figure 1: Alligatoridae Family and sister taxa](Figures/alligatoridea-phylo2.png)
+![Figure 1: Alligatoridae Family and sister taxa](Figures/alligatoridea-phylo2.png)
 
-	![Figure 2: Phylogeny of extant amniot tetrapod vertebrates](Figures/figure2.png)
+![Figure 2: Phylogeny of extant amniot tetrapod vertebrates](Figures/figure2.png)
 
 ### Background on the DataSet
 My original data file from the pbdb website contained occurence data for specimens in the alligatoridae family and when using the the shell command: 
@@ -39,13 +39,13 @@ Using this dictionary, I wrote a csv file that contained only the genus, species
 			output.write(outline)
 
 Which looked like this:
-	![alligatoridae_ranges.csv](/Figures/csvscreenshot.png)
+![alligatoridae_ranges.csv](/Figures/alligdata.png)
 
 Rstudio was used to label the data table:
-![table](/home/eeb177-student/Desktop/eeb177-final-project/Figures/AlligatorTable.png)
+![table](/Figures/AlligatorTable.png)
 
 Finally, using ggplot I created this rangeplot for species occurences.
-![plot](/home/eeb177-student/Desktop/eeb177-final-project/Figures/OccurencePlot.png)
+![plot](/Figures/OccurencePlot.png)
 
 ### Future directions
 It would be very interesting if the pbdb website provided data on the exact locations that each specimen was found in order to recreate species occurences map. When on the pbdb website however, I found a map which showed locations of the occurences already (it is linked below). We can see that some *Alligatoridae* specimens occurred in regions as far north as Canada. Clearly it is much to cold today in Canada at those high latitudes, therefore finding remains of members of this family either suggests that Canada once had a much warmer climate. This could be evidence supporting that tectonic plates and thus continents have shifted throughout earths history.
