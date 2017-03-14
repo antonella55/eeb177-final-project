@@ -58,7 +58,7 @@ Finally, using ggplot I created this rangeplot for species occurences:
 ### Future directions
 It would be very interesting if the pbdb website provided data on the exact locations that each specimen was found in order to recreate species occurences map. When on the pbdb website however, I found a map which showed locations of the occurences already (it is linked below). We can see that some *Alligatoridae* specimens occurred in regions as far north as Canada. Clearly it is much to cold today in Canada at those high latitudes, therefore finding remains of members of this family either suggests that Canada once had a much warmer climate. This could be evidence supporting that tectonic plates and thus continents have shifted throughout earths history.
 
-[*Alligatoridae* Occurence Map](/Figures/worldoccurence.png)
+![*Alligatoridae* Occurence Map](/Figures/worldoccurence.png)
 
 
     1. "Natural History Collections: Family Alligatoridae." Natural History Collections: Family Alligatoridae. <http://www.nhc.ed.ac.uk/index.php?page=24.134.137.141.149>.
