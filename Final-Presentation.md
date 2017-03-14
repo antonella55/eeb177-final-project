@@ -42,12 +42,15 @@ Using this dictionary, I wrote a csv file that contained only the genus, species
 			output.write(outline)
 
 Which looked like this:
+
 ![alligatoridae_ranges.csv](/Figures/alligdata.png)
 
 Rstudio was used to label the data table:
+
 ![table](/Figures/AlligatorTable.png)
 
-Finally, using ggplot I created this rangeplot for species occurences.
+Finally, using ggplot I created this rangeplot for species occurences:
+
 ![plot](/Figures/OccurencePlot.png)
 
 ![cretacious](/Figures/cretaciousmap.png)
