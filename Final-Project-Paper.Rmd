@@ -145,15 +145,24 @@ extract.ages.pbdb(file = "alligatoridae_occ.csv", extant_species = extant_alliga
 
 ## Discussion
 
-The results of this project have raised some interesting questions about the occurence and distribution of members of the *Alligatoridae* family since the Late Cretacious. From the PBDB webpage, a map showing where all the specimens were collected, in this case for those collected from the *Alligatoridae* family, is available to view (Figure 11). It can be seen that fossils found from this family are restricted to certain parts of the world, mainly North and South America. This supports the fact that these species are restricted in their distributions due to salt water. After viewing the Alligatoridae Occurence Plot made using ggplot, the question of why and how has the species Alligator mississippiensis had such great longevity, especially compared to the other *Alligatoridae* species. One possible reason may be that Alligator mississippiensis is native to North America, as noted by its name, and thus throughout the different climate cycles of Earth since the Late Cretaceous.
+The results of this project have raised some interesting questions about the occurence and distribution of members of the *Alligatoridae* family since the Late Cretacious. From the PBDB webpage, a map showing where all the specimens were collected, in this case for those collected from the *Alligatoridae* family, is available to view (Figure 11). It can be seen that fossils found from this family are restricted to certain parts of the world, mainly North and South America. This supports the fact that these species are restricted in their distributions due to salt water. After viewing the Alligatoridae Occurence Plot made using ggplot, the question of why and how has the species Alligator mississippiensis had such great longevity, especially compared to the other *Alligatoridae* species. One possible reason may be that Alligator mississippiensis is native to North America, as noted by its name, and thus throughout the different climate cycles of Earth since the Late Cretaceous. At around the time of the Late Cretaceous, the sea level was much higher, thus posing a limitation to the migration of the species (Figure 12). However sea levels have mostly dropped since then, revealing more land thus perhaps aiding members of the *Alligatoridae* family to survive through the last ice age. 
+ We can see that some *Alligatoridae* specimens occurred in regions as far north as Canada. Clearly it is much to cold today in Canada at those high latitudes, therefore finding remains of members of this family either suggests that Canada once had a much warmer climate. This could be evidence supporting that tectonic plates and thus continents have shifted throughout earths history.
 
+\begin{figure}
+\label{4}
+\includegraphics[width=15cm, height=15cm,keepaspectratio]{Figures/worldoccurence.png}
+\centering
+\caption{PBDB World Occurence of Alligatoridae}
+\end{figure}
 
-on the pbdb website however, I found a map which showed locations of the occurences already (it is linked below). We can see that some *Alligatoridae* specimens occurred in regions as far north as Canada. Clearly it is much to cold today in Canada at those high latitudes, therefore finding remains of members of this family either suggests that Canada once had a much warmer climate. This could be evidence supporting that tectonic plates and thus continents have shifted throughout earths history.
+\begin{figure}
+\label{4}
+\includegraphics[width=10cm, height=10cm,keepaspectratio]{Figures/cretaciousmap.png}
+\centering
+\caption{Cretacious Period World Map}
+\end{figure}
 
-![*Alligatoridae* Occurence Map](Figures/worldoccurence.png)
-![cretacious](Figures/cretaciousmap.png)
-
-###Github link https://github.com/antonella55/eeb177-final-project.git)
+###Github link https://github.com/antonella55/eeb177-final-project.git
 
 \clearpage
 
